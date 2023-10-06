@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    padding: 5px 5px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #9e9a9a;
+}
+
+ul li a:hover {
+color: #333333;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    position: relative;
+    right: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.container .navbar {
+    padding: 0 25px; 
+    max-width: 1300px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header {
+    background: radial-gradient(#fff,#ffb6d6);
+}
+
+.col-2 {
+    min-width: 300px;
+    flex-basis: 50px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.col-2 h1 {
+font-size: 50px;
+line-height: 60px;
+margin: 25px 0;
+}
+
+#banner {
+    background-image: url("images/banner.jpg");
+    background-size: cover;
+    width: 100%;
+}
+
+.btn {
+    background-color: #ff523b;
+    color: #fff;
+    padding: 8px 10px;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: #563434;
+}
+
+/* Categories */
+
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;   
+}
+
+.small-contairner {
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+/* Produk Pilihan */
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img {
+    width: 100%;
+    height: 350px;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after {
+    content: "";
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+.rating .fa {
+    color: #ff523b;
+}
+
+.col-4:hover {
+    transform: translate(-5px);
+}
+
+/* Produk Pilihan End */
+
+.over {
+    background: radial-gradient(#fff,#ffb6d6);
+}
+
+small {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+/* Testimoni */
+
+.row-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.testimonial .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    transition: transform 0.5s;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.testimonial .col-3 img {
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.testimonial .col-3:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial .col-3 p {
+    font-size: 12px;
+    color: #777;
+    margin: 12px 0 ;
+}
+
+.testimonial .col-3 h3 {
+    color: #555;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* brands */
+
+.brands {
+    margin: 100px auto;
+}
+
+.col-5 {
+    width: 160px;
+}
+
+.col-5 img {
+    width: 100%;
+    filter: grayscale();
+}
+
+.col-5 img:hover {
+    filter: grayscale(0);
+}
+
+/* footer */
+
+.footer {
+    background-color: black;
+    color: #9e9a9a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+    margin-left: 20px;
+}
+
+.footer-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 140px;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-3, .footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+.footer h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Produk */
+
+.Waper {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.Waper .row img {
+    width: 300px;
+    height: auto;
+}
+
+.page-btn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-btn span {
+    display: inline-block;
+    border: 1px solid salmon;
+    width: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Tentang */
+
+.about {
+    background-image: url("images/aboutus.jpg");
+    background-size: cover;
+    width: 100%;
+    padding: 70px;
+}
+
+.about h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.about-content {
+    background-color: rgba(247, 247, 247, 0.5);
+    padding: 30px;
+}
+
+.about-content p {
+    margin-top: 10px;
+}
+
+/* Hubungi kami */
+
+.contact {
+    padding: 50px 0;
+    background-image: url("images/account.jpg");
+}
+
+.contact .form-container {
+    height: auto;
+    width: 50%;
+    margin: auto;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 400px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 -5px;
+}
+
+form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    position: relative;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border: 1px solid #ebe9e5;
+    color: #70747f;
+    border-radius: 26px;
+    line-height: 1.43;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color:#ff523b ;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+}
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor:pointer ;
+    margin: 10px 0;
+}
+
+.container h2 {
+    color: white;
+}
+
+/* Akun */
+
+.account-page {
+    padding: 50px 0;
+    background-image: url("images/account.jpg");
+}
+
+.account-page .container h2 {
+    color: #555;
+    text-align: center;
+}
+
+/* Keranjang */
+
+.cart-page {
+    margin: 80px;
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background-color: #ff523b;
+    font-weight: normal;
+}
